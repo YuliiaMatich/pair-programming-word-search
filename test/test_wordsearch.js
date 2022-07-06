@@ -1,12 +1,16 @@
-const chai = require('chai');
-const assert = chai.assert;
+// const chai = require('chai');
+//const assert = chai.assert;
+const assert = require('chai').assert;
+//const assert = chai.assert;
 
 const wordSearch = require('../wordsearch.js')
+
+
 
 describe("#wordSearch()", function() {
   it("should return false if the word is not present", function() {
     const result = wordSearch([
-      ['A', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['A', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],  
       ['S', 'E', 'I', 'N', 'F', 'E', 'L', 'D'],
       ['Y', 'F', 'C', 'F', 'Q', 'U', 'A', 'L'],
       ['H', 'M', 'J', 'T', 'E', 'V', 'R', 'G'],
